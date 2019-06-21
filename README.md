@@ -24,3 +24,42 @@ You must use Angular 4 or higher. Style however you would like. You have total f
 
 Create a pull request once you have it working. I will clone your repository, verify that it works, and evaluate it.
 
+## Solution Code for Review
+
+# Flight search REST API (Backend)
+
+###Run  REST api server 
+
+$ mvn package
+$ java -jar target/ua.flights-0.0.1-SNAPSHOT.jar
+
+
+
+###Test REST API
+
+Get all flights
+http://localhost:8080/flights/all
+
+
+Simple search using 
+http://localhost:8080/flights/search?flightNumber=2005&origin=IAH&date=2018-01-31
+
+
+
+#Web server (Front End)
+
+### Build SimpleFlightSearch
+cd  ./AngularWebApp
+npm install 
+
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+
+
+### Run server
+Run `ng serve` for a dev server. 
+
+
+# Simple Flight Search in action
+Navigate to `http://localhost:4200/`. 
